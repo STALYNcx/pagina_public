@@ -1,0 +1,30 @@
+
+*{
+    --c01: #000;
+    --c02: #fff;
+    --c03: #dbf0ff;
+    --c04: #48e;
+
+
+    /*tamaños*/
+    --t01: 100px;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+
+    background-color: var(--c03);
+    color: var(--c04);
+    text-transform: capitalize;
+}
+.logo{
+    width: var(--t01);
+    height: var(--t01);
+}
