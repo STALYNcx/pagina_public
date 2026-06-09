@@ -1,30 +1,246 @@
-
-*{
+* {
     --c01: #000;
     --c02: #fff;
-    --c03: #dbf0ff;
+    --c03: #00205c;
     --c04: #48e;
+    --c05: #caa500;
 
 
     /*tamaños*/
-    --t01: 100px;
+    --t01: 80px;
+    box-sizing: border-box;
 }
-body{
+
+body {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+
 }
 
-header{
+a {
+    text-decoration: none;
+}
+
+
+h4{
+    margin: 0;
+    color: var(--c03);
+}
+h5{
+    color: var(--c03);
+}
+
+
+/*header__________________*/
+header {
+    padding: 10px;
+
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    gap: 20px;
+    /* flex-flow: row wrap; */
+    align-items: center;
+    /* justify-content:space-between; */
+
+    gap: 10px;
 
     background-color: var(--c03);
-    color: var(--c04);
+    color: var(--c02);
     text-transform: capitalize;
+
+    position: sticky;
+    top: 0;
+
+    z-index: 50;
 }
-.logo{
+
+h1 {
+    text-transform: uppercase;
+    font-size: 18px;
+}
+
+.logo {
     width: var(--t01);
     height: var(--t01);
+}
+
+.listHeader {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+
+    flex-flow: wrap;
+}
+
+.listHeader li{
+    padding: 10px;
+}
+
+.listHeader li:hover {
+    cursor: pointer;
+    color: var(--c05);
+}
+
+
+/*_____________________nav*/
+
+nav {
+    position: relative;
+}
+
+nav h3 {
+    color: var(--c02);
+    margin: 0;
+    font-size: 40px;
+    width: 35%;
+}
+
+nav span {
+    color: var(--c05);
+}
+
+nav .item1 {
+    padding: 30px;
+    min-height: 250px;
+    color: var(--c02);
+
+    background-image: linear-gradient(to right, var(--c03) 0%, transparent 70%),
+        url('img/imagen.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.imagenPrincipal {
+    width: 100%;
+    position: absolute;
+    z-index: -40;
+}
+
+nav a {
+    color: var(--c02);
+    padding: 15px;
+    background-color: var(--c05);
+    border-radius: 7px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 12px;
+
+    margin: 5px;
+}
+
+.btn2 {
+    background-color: transparent;
+    border: 2px solid var(--c02);
+}
+
+
+nav > div {
+    padding: 30px;
+}
+
+.section2{
+    display: grid;
+    grid-template-columns: 2fr 5fr;
+    gap: 25px;
+}
+
+.section2 img{
+    height: 200px;
+    width: 100%;
+}
+
+.somos{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+}
+
+
+
+
+.section3, .section4, .section5, .section6{
+    border-top: 1px solid var(--c01);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.divOfertaAcademia{
+    display: flex;
+    flex-direction: row;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.divOfertaAcademia .item{
+    border: 1px solid var(--c03);
+    border-radius: 15px;
+    padding: 15px;
+
+    min-width: 100px;
+    max-width: 250px;
+    
+    text-align: center;
+}
+
+
+.section4{
+    background-color: var(--c03);
+    color: var(--c02);
+}
+
+
+
+
+/*_________________footer*/
+footer {
+
+    width: 100dvw;
+    background-color: var(--c03);
+    color: var(--c02);
+
+
+    padding: 10px;
+    /* position: fixed;
+    bottom: 0; */
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.mapa {
+    border-radius: 15px;
+}
+
+.btnWhat {
+    text-transform: uppercase;
+    padding: 10px;
+    color: var(--c02);
+    background-color: var(--c05);
+
+    border-radius: 7px;
+    font-size: 12px;
+}
+
+.btnWhat:hover {
+    cursor: pointer;
+}
+
+
+.ico {
+    width: 35px;
 }
